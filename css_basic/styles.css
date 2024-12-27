@@ -17,6 +17,7 @@ main {
 
 
 article {
+  background-color: #e9ecef; 
   flex: 2; 
   overflow-y: auto; 
 }
