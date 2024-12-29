@@ -1,1 +1,50 @@
+.header {
+  width: 1103.41px;
+  height: 29.46px;
+  color: FFFFFF;
+  position: absolute;
+  top: 35.02px; 
+  left: 171.59px; 
 
+
+.background-section {
+  background-image: url(images/background picture.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 1093px;
+  width: 1440px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: Radial; 
+  text-align: center; 
+}
+
+/* Button styling inside the section */
+.background-section button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: C271FF; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.background-section button:hover {
+  background-color: #ff3c3c; /* Darker red on hover */
+}
+
+/* Additional text styling */
+.background-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.background-section span {
+  display: block;
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
