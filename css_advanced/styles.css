@@ -1,4 +1,4 @@
-.header {
+header {
   width: 1103.41px;
   height: 29.46px;
   color: FFFFFF;
@@ -7,7 +7,7 @@
   left: 171.59px; 
 
 
-.background-section {
+background-section {
   background-image: url(images/background picture.png'); 
   background-size: cover; 
   background-position: center; 
@@ -22,7 +22,7 @@
 }
 
 /* Button styling inside the section */
-.background-section button {
+background-section button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: C271FF; 
@@ -33,17 +33,18 @@
   cursor: pointer;
 }
 
-.background-section button:hover {
+background-section button:hover {
   background-color: #ff3c3c; /* Darker red on hover */
 }
 
 /* Additional text styling */
-.background-section h1 {
+h1 {
+  color: white
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
-.background-section span {
+background-section span {
   display: block;
   font-size: 1.5rem;
   margin: 5px 0;
