@@ -215,6 +215,21 @@
   .tutorial p:last-child {
     color: #9b59b6;
   }
+  .background
+  {
+      width: 25%;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+
+  .overlay
+  {
+      width: 25% ;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      
   .white-section h2 span {
     color: #9b59b6; /* Replace with desired purple color */
   }
