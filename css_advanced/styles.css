@@ -325,6 +325,6 @@ footer p {
   bottom: 10px; 
   left: 50%;
   transform: translateX(-50%); 
-  font-size: 0.9rem; 
+  font-size: 0.5rem; 
   text-align: center; 
 }
