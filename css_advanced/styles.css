@@ -82,6 +82,20 @@
   }
   
   /* Hero Section */
+  .hero-content {
+      background-image: url(images/backround picture.png); 
+      background-size: cover; 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      height: 1093px;
+      width: 1440px;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      color: Radial; 
+      text-align: center; 
+  }
+
   .hero {
     color: #ffffff;
     text-align: center; /* Center content */
