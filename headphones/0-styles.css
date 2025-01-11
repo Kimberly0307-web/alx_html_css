@@ -13,7 +13,7 @@ body::after {
 }
 
 body {
-    background-image: url(Images/headphones_hero_1.png);
+    background-image: url(Images/headphones_hero_1.jpg);
     background-repeat:  no-repeat;
     background-position: center;
     background-position-y: top;
@@ -88,7 +88,7 @@ nav ul {
     font-style: bold;
     padding: 0 20px;
  }
- h2 {
+ .span {
     position: relative;
     top: -25px;
     font-size: 16px;
