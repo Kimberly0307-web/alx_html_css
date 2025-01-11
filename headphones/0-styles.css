@@ -12,8 +12,8 @@ body::after {
     
 }
 
-.background-container {
-    background-image: url(Image/headphones_hero_1.png);
+body {
+    background-image: url(https://i.ibb.co/0mffxsv/Photo-Room-20250106-182136.png);
     background-repeat:  no-repeat;
     background-position: center;
     background-position-y: top;
@@ -88,7 +88,7 @@ nav ul {
     font-style: bold;
     padding: 0 20px;
  }
- .span {
+ h2 {
     position: relative;
     top: -25px;
     font-size: 16px;
@@ -146,7 +146,7 @@ nav ul {
     p {
       padding: 0 60px; 
     }
-    .rectangle {
+    .rectagle {
         z-index: 2;
         width: 20px;
         height: 14px;
@@ -157,14 +157,14 @@ nav ul {
         flex-direction: column;
         gap: 3.6px;
     }
-    .rectangle div {
+    .rectagle div {
         width: 20px;
         height: 2px;
         background-color: #e2e8f1;
         border-radius: 50px;
     }
 
-    .rectangle div:nth-child(2) {
+    .rectagle div:nth-child(2) {
        width: 13px; 
     }
 
@@ -215,21 +215,21 @@ nav ul {
         top: 0px;
         right: -15px;
     }
-      .rectangle div:hover {
+      .rectagle div:hover {
         background-color: #FF6565;
       }
 
-      .rectangle div:nth-child(2):hover {
+      .rectagle div:nth-child(2):hover {
         background-color: #ffffff00;
      }
 
-     .rectangle div:nth-child(1):hover {
+     .rectagle div:nth-child(1):hover {
         transform: rotate(45deg);
         position: relative;
         top: 5px;
      }
 
-     .rectangle div:nth-child(3):hover {
+     .rectagle div:nth-child(3):hover {
         transform: rotate(-45deg);
         position: relative;
         top: -5px;
