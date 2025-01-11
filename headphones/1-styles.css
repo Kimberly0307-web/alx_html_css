@@ -1,44 +1,38 @@
-p {
-  color:071629;
-.con img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto;
-        
-      }
-.con h3{
-        font-size: 18px;
-        color: white;
-      }
-.con p{
-        font-size: 16px;
-        color: white;
-      }
- 
-.white-section{
-    background-color: #FFFFFF;
-    margin-top: 0;
-    padding-top: 10px;
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-.box { 
-    padding: 20px;
+.section{
+    margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
     align-items: center;
-     }
-.icon-home {
-  color:FF6565;
-  width:94.2;
-  height:65.36
-  .Grid-what we do {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; 
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 98px;
-} 
+    justify-content: center;
+}
+.section h2{
+    color:#0b121a ;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.section p{
+    color: #0b121a;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+.holberton{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 350px;
+    color: #0b121a;
+    line-height: 1.6;
+}
+
+ 
+
