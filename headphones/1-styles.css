@@ -1,1 +1,44 @@
-
+p {
+  color:071629;
+.con img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        
+      }
+.con h3{
+        font-size: 18px;
+        color: white;
+      }
+.con p{
+        font-size: 16px;
+        color: white;
+      }
+ 
+.white-section{
+    background-color: #FFFFFF;
+    margin-top: 0;
+    padding-top: 10px;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center;
+}
+.box { 
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+     }
+.icon-home {
+  color:FF6565;
+  width:94.2;
+  height:65.36
+  .Grid-what we do {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 98px;
+} 
