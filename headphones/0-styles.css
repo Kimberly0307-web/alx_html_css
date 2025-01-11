@@ -12,7 +12,7 @@ body::after {
     
 }
 
-body {
+.background-container {
     background-image: url(Image/headphones_hero_1.png);
     background-repeat:  no-repeat;
     background-position: center;
@@ -146,7 +146,7 @@ nav ul {
     p {
       padding: 0 60px; 
     }
-    .rectagle {
+    .rectangle {
         z-index: 2;
         width: 20px;
         height: 14px;
@@ -157,14 +157,14 @@ nav ul {
         flex-direction: column;
         gap: 3.6px;
     }
-    .rectagle div {
+    .rectangle div {
         width: 20px;
         height: 2px;
         background-color: #e2e8f1;
         border-radius: 50px;
     }
 
-    .rectagle div:nth-child(2) {
+    .rectangle div:nth-child(2) {
        width: 13px; 
     }
 
@@ -215,21 +215,21 @@ nav ul {
         top: 0px;
         right: -15px;
     }
-      .rectagle div:hover {
+      .rectangle div:hover {
         background-color: #FF6565;
       }
 
-      .rectagle div:nth-child(2):hover {
+      .rectangle div:nth-child(2):hover {
         background-color: #ffffff00;
      }
 
-     .rectagle div:nth-child(1):hover {
+     .rectangle div:nth-child(1):hover {
         transform: rotate(45deg);
         position: relative;
         top: 5px;
      }
 
-     .rectagle div:nth-child(3):hover {
+     .rectangle div:nth-child(3):hover {
         transform: rotate(-45deg);
         position: relative;
         top: -5px;
