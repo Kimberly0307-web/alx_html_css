@@ -1,1 +1,31 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icons.woff') format('woff'),
+        url('icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-home:before {
+  content: "\e901";
+}
+
+.icon-home:before {
+  content: "\e902";
+}
