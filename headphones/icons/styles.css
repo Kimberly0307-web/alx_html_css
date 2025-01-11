@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icons.woff') format('woff'),
-        url('icons.ttf') format('truetype');
+  src:  url('holberton_school-icon.woff') format('woff'),
+        url('holberton_school-icon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,13 +19,13 @@
 }
 
 .icon-home:before {
-  content: "\e900";
+  content: "\e90e";
 }
 
-.icon-home:before {
+.icon-file:before {
   content: "\e901";
 }
 
-.icon-home:before {
+.icon-music:before {
   content: "\e902";
 }
