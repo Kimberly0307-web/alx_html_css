@@ -17,27 +17,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #071629
 }
   
-.ww section.column {
+.ww section.columns {
   display: flex;
 }
 
-.ww section.column div{
+.ww section.columns div{
   padding: 0 50px;
 }
-.ww section.column{
+.ww section.columns{
    display: flex;
       flex-wrap: wrap;
       padding: 0;
    }
-.ww section.column div{
+.ww section.columns div{
       width: 50%;
    }
-.ww section.column{
+.ww section.columns{
       flex-direction: column;
       padding: 0;
    }
 
-  .ww section.column div {
+  .ww section.columns div {
       width: auto;
    }    
 
