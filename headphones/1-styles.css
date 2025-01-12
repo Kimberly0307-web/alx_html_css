@@ -9,6 +9,37 @@
   font-style: normal;
   font-display: block; /* Ensures fonts load predictably */
 }
+h1, h2, h3, h4, h5, h6 {
+   font-weight: bold;
+}
+.ww section {
+  background: #FFFFFF;
+  color: #071629
+}
+  
+.ww section.column {
+  display: flex;
+}
+
+.ww section.column div{
+  padding: 0 50px;
+}
+.ww section.column{
+   display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+   }
+.ww section.column div{
+      width: 50%;
+   }
+.ww section.column{
+      flex-direction: column;
+      padding: 0;
+   }
+
+  .ww section.column div {
+      width: auto;
+   }    
 
 /* Base styles for all holberton icons */
 [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
@@ -24,29 +55,29 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Default styles for icons */
-  color: #FF6565; /* Default color */
-  height: auto; /* Allows flexibility unless explicitly overridden */
-  width: auto; /* Same as above */
-}
+  
 
 /* Icon-specific styles */
 .holberton_school-icon-ic_sound {
+  color: #FF6565; /* Default color */
   height: 65.36px;
   width: 94.2px;
 }
 
 .holberton_school-icon-ic_video {
+  color: #FF6565; /* Default color */
   height: 76.8px;
   width: 67.59px;
 }
 
 .holberton_school-icon-ic_music {
+  color: #FF6565; /* Default color */
   height: 57.27px;
   width: 51.66px;
 }
 
 .holberton_school-icon-ic_hearing {
+  color: #FF6565; /* Default color */
   height: 61.44px;
   width: 61.43px;
 }
