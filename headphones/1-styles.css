@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'holberton_school-icon';
-  src:  url('icons/holberton_school-icon.eot');
-  src:  url('icons/holberton_school-icon.eot') format('embedded-opentype'),
-    url('icons/holberton_school-icon.ttf') format('truetype'),
-    url('icons/holberton_school-icon.woff') format('woff'),
-    url('icons/holberton_school-icon.svg') format('svg');
+  src: url('icons/holberton_school-icon.eot');
+  src: url('icons/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+       url('icons/holberton_school-icon.ttf') format('truetype'),
+       url('icons/holberton_school-icon.woff') format('woff'),
+       url('icons/holberton_school-icon.svg#holberton_school-icon') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: block; /* Ensures fonts load predictably */
 }
 
+/* Base styles for all holberton icons */
 [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'holberton_school-icon' !important;
+  font-family: 'holberton_school-icon' !important; /* Forces the use of this font */
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -20,40 +20,43 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
+  /* Better font rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Default styles for icons */
+  color: #FF6565; /* Default color */
+  height: auto; /* Allows flexibility unless explicitly overridden */
+  width: auto; /* Same as above */
 }
 
-.holberton_school-icon-arrow_1:before {
-  content: "\e900";
+/* Icon-specific styles */
+.holberton_school-icon-ic_sound {
+  height: 65.36px;
+  width: 94.2px;
 }
-.holberton_school-icon-arrow_2:before {
-  content: "\e901";
+
+.holberton_school-icon-ic_video {
+  height: 76.8px;
+  width: 67.59px;
 }
-.holberton_school-icon-arrow_3:before {
-  content: "\e902";
+
+.holberton_school-icon-ic_music {
+  height: 57.27px;
+  width: 51.66px;
 }
-.holberton_school-icon-arrow_4:before {
-  content: "\e903";
+
+.holberton_school-icon-ic_hearing {
+  height: 61.44px;
+  width: 61.43px;
 }
-.holberton_school-icon-arrow_5:before {
-  content: "\e904";
-}
-.holberton_school-icon-check:before {
-  content: "\e905";
-}
-.holberton_school-icon-ic_bag:before {
-  content: "\e906";
-}
-.holberton_school-icon-ic_cart:before {
-  content: "\e907";
-}
+
+
 .holberton_school-icon-ic_facebook:before {
   content: "\e908";
 }
 .holberton_school-icon-ic_hearing:before {
-  content: "\e909";
+  content: "&#xe909";
 }
 .holberton_school-icon-ic_instagram:before {
   content: "\e90a";
@@ -61,9 +64,7 @@
 .holberton_school-icon-ic_laptop:before {
   content: "\e90b";
 }
-.holberton_school-icon-ic_money:before {
-  content: "\e90c";
-}
+
 .holberton_school-icon-ic_music:before {
   content: "\e90d";
 }
@@ -76,15 +77,5 @@
 .holberton_school-icon-ic_video:before {
   content: "\e910";
 }
-.holberton_school-icon-menu:before {
-  content: "\e911";
-}
-.holberton_school-icon-search_1:before {
-  content: "\e912";
-}
-.holberton_school-icon-search_2:before {
-  content: "\e913";
-}
-.holberton_school-icon-star:before {
-  content: "\e914";
-}
+
+
