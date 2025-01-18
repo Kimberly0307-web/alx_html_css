@@ -1,1 +1,60 @@
+/* Our results */
 
+.results {
+   background-position: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-color: var(--color-black);
+   z-index: -1;
+   background-image: url(./images/headphones_hero_2.jpg);
+}
+
+.results .columns {
+   display: flex;
+}
+
+.results .columns .poly {
+   background-image: url(./images/pentagone.png);
+   background-size: 100%;
+   background-repeat: no-repeat;
+   width: 190px;
+   height: 190px;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+}
+
+.results .columns .poly .number {
+   margin: 40px 10px 5px 5px;
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-size-xxx-large);
+}
+
+.results .columns .poly .subtitle {
+   margin:  0 0 20px 0;
+   font-size: var(--font-size-small);
+}
+
+@media screen and (max-width: 1000px) {
+   .results .columns {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;;
+   }
+
+   .description .columns .poly {
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   .description .columns {
+      flex-direction: column;
+      padding: 0;
+   }
+}
