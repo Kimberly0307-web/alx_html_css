@@ -4,30 +4,34 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; /* Center-align headings */
 }
 
-/* What we do section styles */
+/* What we do section */
 .ww section {
+  height: 700px;
   background: #FFFFFF;
   color: #071629;
-  text-align: center; /* Center-align the content */
-  padding: 20px; /* Add spacing */
+  text-align: center; 
+  padding: 20px; 
 }
 
-/* Icon section layout */
+
 .ww section.columns {
-  display: flex; /* Enable Flexbox layout */
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  justify-content: center; /* Center items horizontally */
-  gap: 20px; /* Add spacing between columns */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
 }
+.ww-paragraph{
+  text-align: center;
+  line-height: 1.6 em;
+  padding: 50px 400px; 
 
 
-/* Icon-specific styles */
 [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
   font-family: 'holberton_school-icon' !important;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 48px; /* Default icon size */
+  font-size: 90px; 
   display: block;
   margin: 0 auto 10px; /* Center the icon and add spacing */
   color: #FF6565; /* Default color */
@@ -78,4 +82,30 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 12px;
   padding: 20px;
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        /* display: flex; */
+        height: 1500px;
+        width: 600px;
+
+    }
+
+    .ww-paragraph {
+        padding: 30px 137px;
+    }
+
+    icons-list {
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+
+
+     icons-list-text {
+        padding: 0 143px;
+        margin: 24px
+    }
+
+}
   
