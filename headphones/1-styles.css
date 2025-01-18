@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   line-height: 1.6 em;
   padding: 50px 400px; 
+}
 
 
 [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
@@ -74,38 +75,15 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 60px
-  justify-content: center;  
-.h3{
+  justify-content: center; 
+}
+.h3 {
   padding: 20px
   text-align: centre
+}
 .icons-list-text{
   text-align: center;
   margin: 12px;
   padding: 20px;
-
-@media only screen and (max-width: 600px) {
-
-    section {
-        /* display: flex; */
-        height: 1500px;
-        width: 600px;
-
-    }
-
-    .ww-paragraph {
-        padding: 30px 137px;
-    }
-
-    icons-list {
-        flex-direction: column;
-        /* padding: 20px; */
-    }
-
-
-     icons-list-text {
-        padding: 0 143px;
-        margin: 24px
-    }
-
 }
-  
+
