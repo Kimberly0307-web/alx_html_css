@@ -1,11 +1,17 @@
-/* General heading styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-align: center; 
 }
 
 /* What we do section */
-.ww section {
+
+section {
   height: 700px;
   background: #FFFFFF;
   color: #071629;
@@ -86,3 +92,32 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+
+    section {
+        /* display: flex; */
+        height: 1500px;
+        width: 600px;
+
+    }
+
+    .ww-paragraph {
+        padding: 30px 137px;
+    }
+
+    .icons-list {
+        flex-direction: column;
+        /* padding: 20px; */
+    }
+
+    .icons-list icon {
+        width: 20%;
+        margin-left: 39%;
+    }
+
+    .icons-list-text{
+        padding: 0 143px;
+        margin: 24px
+    }
+
+}
