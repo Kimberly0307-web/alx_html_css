@@ -19,12 +19,6 @@ section {
   padding: 20px; 
 }
 
-.ww section.columns {
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
-}
 .ww-paragraph{
   text-align: center;
   line-height: 1.6em;
@@ -37,7 +31,7 @@ section {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 150px; 
+  font-size: 125px; 
   display: block;
   margin: 0 auto 10px; /* Center the icon and add spacing */
   color: #FF6565; /* Default color */
