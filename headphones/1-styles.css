@@ -1,7 +1,7 @@
 /* General heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  text-align: center; /* Center-align headings */
+  text-align: center; 
 }
 
 /* What we do section */
@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px; 
 }
 
-
 .ww section.columns {
   display: flex; 
   flex-wrap: wrap; 
@@ -22,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .ww-paragraph{
   text-align: center;
-  line-height: 1.6 em;
+  line-height: 1.6em;
   padding: 50px 400px; 
 }
 
@@ -32,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 90px; 
+  font-size: 150px; 
   display: block;
   margin: 0 auto 10px; /* Center the icon and add spacing */
   color: #FF6565; /* Default color */
@@ -72,10 +71,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .icons-list{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 60px
-  justify-content: center; 
+   /* padding-top: 50px; */
+   margin-top: 60px
+ 
 }
 .h3 {
   padding: 20px
