@@ -20,13 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px; /* Add spacing between columns */
 }
 
-/* Individual column styles */
-.ww section.columns div {
-  flex: 1 1 calc(25% - 40px); /* Responsive width: 4 columns */
-  text-align: center; /* Center-align text inside each column */
-  padding: 10px; /* Add spacing */
-  min-width: 200px; /* Ensure minimum width for small screens */
-}
 
 /* Icon-specific styles */
 [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
@@ -72,3 +65,17 @@ h1, h2, h3, h4, h5, h6 {
 .holberton_school-icon-ic_video:before {
   content: "\e910";
 }
+.icons-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 60px
+  justify-content: center;  
+.h3{
+  padding: 20px
+  text-align: centre
+.icons-list-text{
+  text-align: center;
+  margin: 12px;
+  padding: 20px;
+  
