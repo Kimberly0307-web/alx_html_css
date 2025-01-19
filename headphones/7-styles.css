@@ -255,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* What we do section */
 
-section {
+.what-we-do {
   height: 700px;
   background: #FFFFFF;
   color: #071629;
@@ -485,6 +485,7 @@ input[type=text]:focus, input[type=email]:focus {
    margin-bottom: 5rem;
    background-color:  #FFFFFF;
  }
+
 /* Footer */
 
 .footer {
@@ -506,19 +507,18 @@ input[type=text]:focus, input[type=email]:focus {
 }
 
 .footer .copy {
-   color: #353535;
-
-   padding-bottom: 5px;
+    color: #353535;
+    padding-bottom: 5px;
 }
 .footer-icon {
      font-family: 'holberton_school-icon' !important;
-     font-size: 20px; /* Smaller icons for the footer */
-     color: #FFFFFF; /* White icons in the footer */
+     font-size: 25px; 
+     color: #FFFFFF; 
      transition: color 0.3s ease;
 }
 
 .footer-icon:hover {
-  color: #FF6565; /* Change to red when hovered */
+  color: #FF6565;
 }
 .footer .items ul .btn-secondary{
    background: #FFFFFF;
@@ -548,14 +548,16 @@ input[type=text]:focus, input[type=email]:focus {
   .footer .items {
     flex-direction: column;
     text-align: center;
+    padding: 0;
   }
-}
+
    .footer .items ul {
       padding-left: 0;
       margin-top: 40px;
       margin-bottom: 40px;
    }
 }
+
 /* Animations */
  
 .what-we-do ..columns i {
