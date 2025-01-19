@@ -270,7 +270,7 @@ section {
 }
 
 
-[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+.what-we-do-icon {
   font-family: 'holberton_school-icon' !important;
   font-style: normal;
   font-weight: normal;
@@ -280,15 +280,9 @@ section {
   margin: 0 auto 10px; 
   color: #FF6565; 
 }
-.holberton_school-icon-ic_facebook
-  font-family: 'holberton_school-icon' !important;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size: 20px; 
-  display: block;
-  margin: 0 auto 10px; 
-  color: #FFFFFF; 
+.what-we-do-icon:hover {
+  transform: scale(1.2); 
+  color: #E24C4C; 
 }
 
 .holberton_school-icon-ic_facebook:before {
@@ -516,7 +510,16 @@ input[type=text]:focus, input[type=email]:focus {
 
    padding-bottom: 5px;
 }
+.footer-icon {
+     font-family: 'holberton_school-icon' !important;
+     font-size: 20px; /* Smaller icons for the footer */
+     color: #FFFFFF; /* White icons in the footer */
+     transition: color 0.3s ease;
+}
 
+.footer-icon:hover {
+  color: #FF6565; /* Change to red when hovered */
+}
 .footer .items ul .btn-secondary{
    background: #FFFFFF;
    color:  #071629;
