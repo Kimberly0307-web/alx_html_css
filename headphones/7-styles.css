@@ -353,12 +353,36 @@ section {
     }
 
 .icons-list {
-    display: flex;
-    flex-wrap: wrap; /* Wraps content if necessary */
-    gap: 20px; /* Adds spacing between items */
-    justify-content: center; /* Centers content horizontally */
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if they don’t fit in one row */
+  justify-content: center; /* Centers icons horizontally */
+  align-items: center; /* Centers icons vertically */
+  gap: 2rem; /* Adds space between items */
+  margin: 2rem auto; /* Centers the entire block on the page */
+  max-width: 1200px; /* Prevents the icons from spreading too wide */
 }
 
+.icons-list div {
+  text-align: center; /* Centers text inside each icon block */
+  width: 200px; /* Sets a consistent width for each icon block */
+}
+
+.icons-list span {
+  display: block; /* Ensures the icon appears on its own line */
+  font-size: 64px; /* Adjusts the icon size */
+  margin-bottom: 1rem; /* Adds spacing between the icon and the text */
+  color: #FF6565; /* Sets the icon color */
+}
+
+.icons-list h3 {
+  font-size: 1.25rem; /* Adjusts heading size */
+  margin: 0.5rem 0;
+}
+
+.icons-list p {
+  font-size: 1rem; /* Adjusts paragraph size */
+  margin: 0;
+}
 
     .icons-list icon {
         width: 20%;
