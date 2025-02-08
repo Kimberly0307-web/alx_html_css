@@ -4,329 +4,215 @@
     padding: 0;
     box-sizing: border-box;
 }
-section {
-  margin: 50px 0; 
-}
-body::after {
-    content: '';position: absolute;
-    width: 100%;
-    height: 800px;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-    background: radial-gradient(100% 100% at 50% 0%, #29303d00 0%, #071629 100%);
-    background-blend-mode: normal, color;
-    
-}
 
 body {
-    background-image: url(Images/headphones_hero_1.jpg);
-    background-repeat:  no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    background-position-y: top;
-    position: relative;
-    max-width: 1400px;
-    max-height: 4960px;
-    margin: 0 auto;
-    color: #FFFFFF;
-    font-family: 'Source Sans Pro';
 }
 
-header nav {
+header {
+    height: 100vh;
+    position: relative;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 27px;
+    left: 50px;
+}
+
+.main-nav {
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;   
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.main-nav li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+a:hover {
+    color:#FF6565;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+    margin: 100px;
+    align-items: center;
+}
+
+.header-content h1 {
+    margin-top: 60px;
+}
+
+.header-content p {
+    margin-top: 20px;
+    /* padding: 10px; */
+}
+
+.header-content button {
+    background-color: #FF6565;
+    padding: 10px;
+    margin: 40px;
+    border: 10px solid #FF6565;
+    color: white;
+    font-size: 17px;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 20%;
+    text-transform: uppercase;
+}
+
+.description p {
+    text-align: center;
+    line-height: 1.6em; 
+    padding: 40px 200px; 
+    margin-bottom: 60px;
+}  
+
+.menu-icon {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-nav li {
+        display: none;
+    }
+
+    header {
+        width: 600px;
+        height: 1000px;
+    }
+
+
+    .header-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 42px;
+        right: 521px;
+    }
+
+    .logo {
+        width: 55%;
+        position: relative;
+        top: 24px;
+        left: 136px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .header-content h1 {
+        margin-top: 290px;
+        font-size: 10vw;
+    }
+
+    .header-content p {
+        margin-top: 17px;
+        padding: 0 61px;
+        /* font-size: 16vm; */
+    }
+
+    .header-content button {
+        background-color: #FF6565;
+        padding: 10px;
+        margin: 40px;
+        border: 5px solid #FF6565;
+        color: white;
+        font-size: 3vw;
+        border-radius: 2em;
+        cursor: pointer;
+        width: 50%;
+        text-transform: uppercase;
+    }
+
+    .description {
+        line-height: 1.6em;
+        padding: 0 9px;
+        margin: 0 -42px;
+    }
+}
+
+/* What we do section*/
+
+section {
+    height: 700px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.what-we-do h2 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.middle {
+    text-align: center;
+    line-height: 1.6em;
+    padding: 50px 400px;
+}
+
+.option-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2rem;
-    max-width: 1000.39px;
-    height: 32px;
-    margin: 0 auto;
-    position: relative;
-    top: 27.76px;
-    z-index: 2;
+    /* padding-top: 50px; */
+    margin-top: 60px;
 }
 
-nav img {
-   max-width: 161px;
-  height: 32px;
-  position: relative;
-  overflow: visible;
-}
-nav ul {
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    position: relative;
-    align-items: center;
-    bottom: 30px;
+.option-list img {
+    width: 30%;
+    margin-left: 35%;
 }
 
- li a {
-    text-decoration: none;
-    font-weight: 500;
-    height: 15px;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    color: #FFFFFF;
- }
-
- .dropbtn {
-    background-color: #07162900;
-    border: none;
- }
-
- .Headphones {
-    max-width: 637px;
-    height: 313px;
-    margin: 0 auto;
+h3 {
+    padding: 20px;
     text-align: center;
-    position: relative;
-    top: 312px;
-    z-index: 2;
-
- }
-
- h1 {
-    position: relative;
-    top: 0;
-    font-size: 32px;
-    font-style: bold;
-    padding: 0 20px;
- }
- .span {
-    position: relative;
-    top: -25px;
-    font-size: 16px;
-    padding: 0 70px;
- }
-
- .red {
-    width: 162px;
-    height: 44px;
-    background-color: #ff6565;
-    border-radius: 50px;
-    border: 0;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 600;
- }
-
- p {
-    max-width: 637px;
-    height: 104px;
-    position: relative;
-    top: 54px;
-    line-height: 26px;
-    font-size: 16px;
-    font-style: normal;
- }
-
- .red:hover {
-    box-shadow: 0 0 20px 0 #071629;
-  }
-  
-  a:hover {
-    color: #FF6565;
-  }
-
-  @media (max-width: 529px) {
-
-    header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2rem;
-        height: 32px;
-        margin: 0 auto;
-        position: relative;
-        top: 27.76px;
-        z-index: 2;
-    }
-    
-      nav ul {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-      }
-    p {
-      padding: 0 60px; 
-    }
-    .rectagle {
-        z-index: 2;
-        width: 20px;
-        height: 14px;
-        position: relative;
-        right: 10px;
-        top: -6px;
-        display: flex;
-        flex-direction: column;
-        gap: 3.6px;
-    }
-    .rectagle div {
-        width: 20px;
-        height: 2px;
-        background-color: #e2e8f1;
-        border-radius: 50px;
-    }
-
-    .rectagle div:nth-child(2) {
-       width: 13px; 
-    }
-
-    .dropbtn {
-        background-color: #187cff00;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        width: 20px;
-        height: 14px;
-        position: relative;
-      }
-      
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        top: -32px;
-        right: 150px;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: relative;
-        left: 150px;
-        top: 40px;
-        z-index: 1;
-      }
-
-      .dropdown-content ul {
-        padding: 0;
-      }
-      
-      .dropdown-content a {
-        color: #ffffff;
-        padding: 12px 0;
-        text-decoration: none;
-        display: block;
-        
-      }
-      
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-    }
-      
-      .dropdown:hover .dropbtn {
-        position: relative;
-        top: 0px;
-        right: -15px;
-    }
-      .rectagle div:hover {
-        background-color: #FF6565;
-      }
-
-      .rectagle div:nth-child(2):hover {
-        background-color: #ffffff00;
-     }
-
-     .rectagle div:nth-child(1):hover {
-        transform: rotate(45deg);
-        position: relative;
-        top: 5px;
-     }
-
-     .rectagle div:nth-child(3):hover {
-        transform: rotate(-45deg);
-        position: relative;
-        top: -5px;
-     }
-
-     .Headphones {
-        position: relative;
-        top: 200px;
-     }
-
-  }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  text-align: center; 
 }
 
-/* What we do section */
-
-.what-we-do {
-  height: 700px;
-  background: #FFFFFF;
-  color: #071629;
-  text-align: center; 
-  padding: 20px; 
-}
-
-.ww-paragraph{
-  text-align: center;
-  line-height: 1.6rem;
-  padding: 50px 400px; 
-}
-
-.icons-list {
+.option-list-text {
     padding: 20px;
     margin: 12px ;
     text-align: center;
 }
 
-
-.what-we-do-icon {
-  font-family: 'holberton_school-icon' !important;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  font-size: 125px; 
-  display: block;
-  width: 30%;
-  margin-left: 35%;
-  color: #FF6565; 
-}
-.what-we-do-icon:hover {
-  transform: scale(1.2); 
-  color: #E24C4C; 
-}
-
- h3 {
-  padding: 20px
-  text-align: centre
-
-.holberton_school-icon-ic_facebook:before {
-  content: "\e908";
-}
-
-.holberton_school-icon-ic_hearing:before {
-  content: "\e909"; 
-}
-
-.holberton_school-icon-ic_instagram:before {
-  content: "\e90a";
-}
-
-.holberton_school-icon-ic_laptop:before {
-  content: "\e90b";
-}
-
-.holberton_school-icon-ic_music:before {
-  content: "\e90d";
-}
-
-.holberton_school-icon-ic_sound:before {
-  content: "\e90e";
-}
-
-.holberton_school-icon-ic_twitter:before {
-  content: "\e90f";
-}
-
-.holberton_school-icon-ic_video:before {
-  content: "\e910";
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -338,54 +224,32 @@ h1, h2, h3, h4, h5, h6 {
 
     }
 
-    .ww-paragraph {
+    .middle {
         padding: 30px 137px;
     }
 
-.icons-list {
-    flex-direction: column;
-}
+    .option-list {
+        flex-direction: column;
+        /* padding: 20px; */
+    }
 
-.icons-list div {
-  text-align: center; /* Centers text inside each icon block */
-  width: 200px; /* Sets a consistent width for each icon block */
-}
-
-.icons-list span {
-  display: block; /* Ensures the icon appears on its own line */
-  font-size: 64px; /* Adjusts the icon size */
-  margin-bottom: 1rem; /* Adds spacing between the icon and the text */
-  color: #FF6565; /* Sets the icon color */
-  width: 20%;
-  margin-left: 39%;
-}
-
-.icons-list h3 {
-  font-size: 1.25rem; /* Adjusts heading size */
-  margin: 0.5rem 0;
-}
-
-.icons-list-text p {
-  font-size: 1rem; /* Adjusts paragraph size */
-  margin: 0;
-}
-
-    .icons-list icon {
+    .option-list img {
         width: 20%;
         margin-left: 39%;
     }
 
-    .icons-list-text{
+    .option-list-text {
         padding: 0 143px;
         margin: 24px
     }
 
 }
-/* Our results */
 
-.results {
- height: 700px;
-    background-image: url(imgages/headphones_hero_2.jpg);
+/* OUR RESULTS SECTION */
+
+.result {
+    height: 700px;
+    background-image: url(images/headphones_hero_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -397,6 +261,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
     margin: 20px;
 }
+
 .middle-1 {
     text-align: center;
     line-height: 1.6em;
@@ -413,37 +278,39 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 10px;
 }
 
-
-
-.results .columns {
-   display: flex;
+.pen-logo img {
+    width: 193px;
+    padding: 7px;
+    margin: 29px;
+    position: relative;
+    left: 170px;
 }
 
-.results .columns .poly {
-   background-image: url(images/pentagone.png);
-   background-size: 100%;
-   background-repeat: no-repeat;
-   width: 190px;
-   height: 190px;
-   display: flex;
-   flex-flow: column;
-   justify-content: center;
-   align-items: center;
-   margin: 29px;
-   padding: 7px;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-.results .columns .poly .number {
-   margin: 40px 10px 5px 5px;
-   font-weight: bold;
-   font-size: 50px;
+
+.image-container img {
+    display: block;
+    /* width: 45%; */
+    /* height: auto; */
 }
 
-.results .columns .poly .subtitle {
-   margin:  0 0 20px 0;
-   font-size: 20px;
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 119%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 33px; 
+    text-align: center;
+    font-weight: bold;
 }
-.subtitle {
+
+.overlay-text-1 {
     position: absolute;
     top: 199px;
     left: 298px;
@@ -451,182 +318,239 @@ h1, h2, h3, h4, h5, h6 {
     margin: -49px;
 }
 
-@media screen and (max-width: 1000px) {
-  .results {
+@media only screen and (max-width: 600px) {
+        
+    .result {
         width: 600px;
         height: 1500px;
         display: flex;
         flex-direction: row;
     }
+
     .container {
         padding: 0;
         margin: 16px;
     }
-        .middle-1 {
+
+    .middle-1 {
         padding: 50px 75px;
     }
-    
-    .poly {
+
+    .pen-logo img {
+        width: 259px;
+        padding: 18px;
+        margin: -2px;
+        position: relative;
+        left: 137px;
         display: flex;
         flex-direction: column;
     }
-    
-    .subtitle {
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .overlay-text {
+        left: 51%;
+        font-size: 56px;
+    }
+
+    .overlay-text-1 {
         top: 213px;
         left: 254px;
         font-size: 15px;
     }
 }
 
-   .what-we-do .columns {
-      flex-direction: column;
-      padding: 0;
-   }
-}
 
-/* Contact Section*/
+/* CONTACT US FORM SECTION */
 
-.contact {
-   background: white;
-   color: black;
-}
-
-input[type=text], input[type=email] {
-   position: relative;
-   width: 100%;
-   padding: 1.2rem;
-   line-height: 1;
-   border: none;
-   border-bottom: .1rem solid black;
-   background-color: #FFFFFF;
-   box-shadow: none;
-   outline: 0;
- }
-
-input[type=text]:focus, input[type=email]:focus {
-   border-bottom: .1rem solid #FFFFFF;
- }
-
-::placeholder {
-   font-style: 700;
-   font-size: 1.6rem;
-   color: #071629;
- }
-
- .form-group {
-   padding: 1rem;
-   margin: 0;
-   margin-bottom: 5rem;
-   background-color:  #FFFFFF;
- }
-
-/* Footer */
-
-.footer {
-   background: #071629;
-   padding-top: 70px;
-   padding-bottom: 20px;
-}
-
-.footer .items {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   padding: 0 100px 0;
-}
-
-.footer .items ul {
-   display: flex;
-}
-
-.footer .copy {
-    color: #353535;
-    padding-bottom: 5px;
-}
-.footer-icon {
-     font-family: 'holberton_school-icon' !important;
-     font-size: 25px; 
-     color: #FFFFFF; 
-     transition: color 0.3s ease;
-}
-
-.footer-icon:hover {
-  color: #FF6565;
-}
-.footer .items ul .btn-secondary{
-   background: #FFFFFF;
-   color:  #071629;
-   border-radius: 40px;
-   font-weight: 700;
-   text-transform: uppercase;
-   padding: 7px 10px;
-}
-
-.footer .items ul li {
-   margin: 0 10px;
-   text-transform: lowercase;
-   font-weight: 700;
-}
-
-.footer .items ul li:first-child {
-   margin-left: 0;
-}
-
-.footer .items ul li:last-child {
-   margin-right: 0;
-}
-
-
-@media screen and (max-width: 768px) {
-  .footer .items {
-    flex-direction: column;
+form {
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
     text-align: center;
-    padding: 0;
-  }
-
-   .footer .items ul {
-      padding-left: 0;
-      margin-top: 40px;
-      margin-bottom: 40px;
-   }
 }
 
-/* Animations */
- 
-.what-we-do ..columns i {
-    animation: pulse 3s infinite;
- }
- 
- @keyframes pulse {
+form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+form div {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    right: 200px;
+}
+
+.msg {
+    position: relative;
+    right: 190px;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1px solid #00000047;
+    width: 30%;
+    /* padding: 5px 0; */
+}
+
+button {
+    background-color: #FF6565;
+    padding: 10px;
+    margin: 40px;
+    border: 10px solid #FF6565;
+    color: white;
+    font-size: 13px;
+    border-radius: 2em;
+    cursor: pointer;
+    width: 10%;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 600px;
+        padding: 64px;
+    }
+
+    label {
+        right: 177px;
+    }
+
+    .msg {
+        right: 168px;
+    }
+
+    input, textarea {
+        position: relative;
+        right: 21px;
+        width: 79%;
+    }
+
+    button {
+        width: 35%;
+        margin: 50px;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #071629;
+    padding: 10px;
+
+}
+
+footer .copy-right {
+    color: rgba(80, 76, 76, 0.682);
+    text-align: center;
+}
+
+.footer-logo {
+    width: 13%;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    left: 30px;
+}
+
+.social-media-logo {
+    width: 10%;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+img.fb {
+    background-color: white;
+    width: 20px;
+    border-radius: 1.6em;
+    position: relative;
+    left: 421%;
+    bottom: 48px;
+}
+
+@media only screen and (max-width: 600px) {
+
+        footer {
+            width: 600px;
+        }
+
+    footer .copy-right {
+        position: relative;
+        left: 10px;
+        font-size: 2.5vw; 
+    }
+
+    .footer-logo {
+        width: 196px;
+        position: relative;
+        left: 192px;
+    }
+
+    img.fb {
+        left: -37%;
+        bottom: 13px;
+        margin: 10px;
+    }
+}
+
+/* animation-effect */
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fade-in {
     0% {
-       color: #FF6565;
+        opacity: 0;
+        transform: scale(0.8);
     }
     100% {
-       color: #071629;
+        opacity: 1;
+        transform: scale(1);
     }
- }
- 
- .what-we-do .columns i:hover {
-    font-size: 150px;
- }
- 
- .results .columns .poly:hover {
-    border: 0;
-    background: #071629;
- }
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
 }
 
-.icons-list span {
-  animation: bounce 2s infinite; 
- 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.what-we-do h2,
+.result h2 {
+    animation: fade-in 2s ease-in-out infinite alternate;
+}
+
+.option-list > div {
+    animation: bounce 3s ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.option-list > div:hover {
+    transform: scale(1.1) rotate(5deg);
+    animation: none; /* Stops the default bounce animation */
+}
